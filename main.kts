@@ -67,15 +67,21 @@ enum class Philosopher {
     abstract fun signal(): Philosopher
 }
 
+// In the fourth section, create a class called Command that can be used as a function. This means you will need to provide a invoke method on the class. The primary constructor should take a String parameter (prompt), and the invoke operator should also take a String parameter (message), and simply return a concatenation of the two.
+
 // create an class "Command" that can be used as a function (provide an "invoke()" function)
 // that takes a single parameter ("message" of type String)
 // primary constructor should take a String argument ("prompt")
 // when called, the Command object should return a String containing the prompt and then the message
 
 
+class Command(val prompt: String) {
+    operator fun invoke(message: String):String {
+        return prompt + message
+    }
+}
 
-//class Command(val prompt: String) {
-//}
+// (By the way, I will give a bonus point to anyone who can find out who Seneca the Younger was, an additional point if you can tell me which school of philosophy he is commonly associated with, and a third point if you can summarize that school of philosophy in a single sentence. On another note, when you have some time to kill, play "The Wikipedia Game"--pick any random subject on Wikipedia, and click the first link on that page. On the page that comes up, click the first link on that page. Continue doing this until you have reached the Wikipedia page on Philosophy, and marvel at how everything in human existence essentially traces its roots back to philosophy and a bunch of dead Greeks in togas.)
 
 
 
@@ -98,10 +104,10 @@ print("Seneca, talk! ")
 seneca = seneca.signal()
 println(if (seneca.toString() == "Allow me to suggest an idea...") "." else "!")
 
-// print("Command tests: ")
-// print(if (Command("")("") == "") "." else "!")
-// print(if (Command("> ")("Hello!") == "> Hello!") "." else "!")
-// println("")
+print("Command tests: ")
+print(if (Command("")("") == "") "." else "!")
+print(if (Command("> ")("Hello!") == "> Hello!") "." else "!")
+println("")
 
 
 
