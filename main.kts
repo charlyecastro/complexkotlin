@@ -83,6 +83,12 @@ class Command(val prompt: String) {
 
 // (By the way, I will give a bonus point to anyone who can find out who Seneca the Younger was, an additional point if you can tell me which school of philosophy he is commonly associated with, and a third point if you can summarize that school of philosophy in a single sentence. On another note, when you have some time to kill, play "The Wikipedia Game"--pick any random subject on Wikipedia, and click the first link on that page. On the page that comes up, click the first link on that page. Continue doing this until you have reached the Wikipedia page on Philosophy, and marvel at how everything in human existence essentially traces its roots back to philosophy and a bunch of dead Greeks in togas.)
 
+// 1. Seneca the Younger was a Roman Stoic Philosopher, Statesman, dramatist and satirist
+// Many people attempted to kill him, but failed. He finally died when he was ordered to // kill himself because he was accused of being part of the pisonian conspiracy
+// 2. Seneca the Younger was associated with Stoicism
+// 3. Stoicism is the philosophy of acheving happiness through practicing virtue ethics  
+// Sources: Wikipedia.org, britannica.com, ancient-literature.com
+
 
 
 
